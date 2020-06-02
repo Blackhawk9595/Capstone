@@ -1,0 +1,149 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0;
+}
+
+
+nav > ul > li {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  padding: .5rem .5rem;
+  border-radius: 25px;
+}
+
+
+footer {
+  border-top: solid 1px black;
+  padding: 2rem 2rem 4rem;
+  margin: 1rem 1rem;
+  clear: both;
+}
+
+#jumbotron {
+  background: url(https://www.lifepixel.com/wp-content/uploads/2017/05/Ryan-Stout-2.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%
+}
+
+#jumbotron > h1 {
+  color:red;
+  text-align: center;
+  background-color: black;
+  padding: 1.5rem 3rem;
+}
+
+
+#jumbotron > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+}
+
+#homePic {
+  display: block;
+  margin: auto;
+}
+
+#EISENTERPRISES {
+  float: left;
+  width: 33%;
+  height: auto;
+  margin: 0 2rem;
+}
+
+
+
+#Products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#Products div {
+  margin: 1rem 2rem;
+}
+
+#Products h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#DocsForm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#DocsForm > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#DocsForm > div div {
+  margin: .25rem .75rem
+}
+
+
+h1 {
+  color: red; font-size:100px;
+  font-family: 'Righteous', cursive;
+  
+  
+  
+}
+ 
+
+h2 { 
+  color: red; font-size: 50px;
+  font-family: 'Righteous', cursive;
+}
+
+
+
+footer {
+
+  font-size: 30px;
+}
+
+
+
+BODY {
+
+  background-color:#000;
+  color:#fff; 
+
+  margin: 30px;
+  margin-top: 10px;
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
