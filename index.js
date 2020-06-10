@@ -1,13 +1,11 @@
 import { header, nav, main,footer} from "./components";
 
-const render () => {
+const render = () => {
 document.querySelector("#root").innerHTML = `
 ${header()}
 ${nav()}
 ${main()}
 ${footer()}
-
-
 `;
 };
 
