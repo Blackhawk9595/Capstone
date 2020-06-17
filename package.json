@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "navigo": "^7.1.2",
     "parcel-bundler": "^1.12.0"
   },
   "devDependencies": {},

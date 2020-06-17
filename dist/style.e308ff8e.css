@@ -3,10 +3,20 @@ header {
   justify-content: space-between;
 }
 
-nav > ul {
+   ul {
   display: flex;
   justify-content: space-evenly;
   padding: 0 0;
+  
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  border: 2px solid purple;
+  border-radius: 50px;
+  padding: 7px;
+  font-size: 35px;
 }
 
 
@@ -16,6 +26,7 @@ nav > ul > li {
   border: 1px solid;
   padding: .5rem .5rem;
   border-radius: 25px;
+  list-style-type: none;
 }
 
 

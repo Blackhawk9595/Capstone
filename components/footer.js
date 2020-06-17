@@ -1,4 +1,4 @@
-export default () => `
+export default st => `
 
 <footer id="footer"><p style="font-size: 50%;">&copy;EIS ENTERPRISES 2020</p>
 <a href="#" class="fa fa-twitter"></a>
