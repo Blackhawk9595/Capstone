@@ -414,6 +414,14 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var router = new _navigo.default(window.location.origin);
+
+var render = function render() {
+  var st = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : state.home;
+  document.querySelector("#root").innerHTML = "\n  ".concat((0, _components.header)(), "\n  ").concat((0, _components.nav)(), "\n  ").concat((0, _components.main)(st), "\n  ").concat((0, _components.footer)(), "\n  ");
+  router.updatePageLinks();
+  addNavListeners();
+};
+
 router.on({
   ":page": function page(params) {
     return render(state[capitalize(params.page)]);
@@ -422,15 +430,6 @@ router.on({
     return render(state.Home);
   }
 }).resolve();
-
-var render = function render() {
-  var st = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : state.home;
-  document.querySelector("#root").innerHTML = "\n".concat((0, _components.header)(), "\n").concat((0, _components.nav)(), "\n").concat((0, _components.main)(st), "\n").concat((0, _components.footer)(), "\n\n");
-  console.log(st);
-  router.updatePageLinks();
-  addNavListeners();
-};
-
 render();
 
 function addNavListeners() {
@@ -442,7 +441,7 @@ function addNavListeners() {
     });
   });
 }
-},{"./components":"components/index.js","./store":"store/index.js","./components/views":"components/views/index.js","navigo":"node_modules/navigo/lib/navigo.min.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components":"components/index.js","./store":"store/index.js","./components/views":"components/views/index.js","navigo":"node_modules/navigo/lib/navigo.min.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -470,7 +469,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36903" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63733" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -646,5 +645,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/Capstone.e31bb0bc.js.map
