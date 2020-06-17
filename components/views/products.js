@@ -1,5 +1,5 @@
 export default () => `
-h2>Products</h2>
+<h2>Products</h2>
     <hr>
   
     <div id="Products">
