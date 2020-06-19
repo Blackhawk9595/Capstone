@@ -9,13 +9,26 @@ nav > ul {
   padding: 0 0;
 }
 
+ ul {
+display: flex;
+justify-content: space-evenly;
+font-size: 40px;
+border: 2px solid purple;
+border-radius: 35px;
+text-decoration: none;
+list-style: none;
+background-color: royalblue;
+padding: 35px;
+}
+
 
 nav > ul > li {
   display: inline-block;
   text-decoration: none;
-  border: 1px solid;
+  border: 1px solid purple;
   padding: .5rem .5rem;
   border-radius: 25px;
+  
 }
 
 
